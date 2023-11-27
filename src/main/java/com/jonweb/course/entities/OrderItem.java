@@ -66,7 +66,10 @@ public class OrderItem {
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-
+	public  Double getSubTotal() {
+		return price * quantity;
+	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
